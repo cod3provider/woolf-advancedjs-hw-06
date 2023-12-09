@@ -2,7 +2,17 @@
   Створіть новий тип даних, який підходить для цих двох об'єктів.
 */
 
-const page1 = {
+
+const page1: {
+  title: string,
+  likes: number,
+  accounts: string[],
+  status: 'open' | 'closed',
+  details?: {
+    createAt: Date,
+    updateAt: Date
+  }
+} = {
   title: 'The awesome page',
   likes: 100,
   accounts: ['Max', 'Anton', 'Nikita'],
